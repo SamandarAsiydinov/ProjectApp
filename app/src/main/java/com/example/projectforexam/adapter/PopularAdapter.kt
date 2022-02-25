@@ -1,0 +1,43 @@
+package com.example.amazonuiclone.adapter
+
+import android.content.Context
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
+import com.example.amazonuiclone.model.Essential
+import com.example.amazonuiclone.model.Popular
+import com.example.projectforexam.R
+
+class PopularAdapter(val items: ArrayList<Popular>) :
+    RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_popular, parent, false)
+        return EessantionalViewHolder(view)
+    }
+
+    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
+        val item = items[position]
+
+        if (holder is EessantionalViewHolder) {
+
+            var image = holder.image
+            image.setImageResource(item.img)
+
+        }
+    }
+
+    override fun getItemCount(): Int {
+        return items.size
+    }
+
+    class EessantionalViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        val image = view.findViewById<ImageView>(R.id.iv_img)
+
+
+    }
+}

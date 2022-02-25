@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginStart="10dp"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        app:cardCornerRadius="10dp"
+        android:orientation="vertical"
+        android:layout_width="200dp"
+        android:layout_height="330dp"
+        tools:ignore="MissingConstraints" >
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_10"
+        android:id="@+id/iv_img"
+        android:layout_width="wrap_content"
+        android:layout_height="240dp"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:text="Italiano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:text="40 Fulton st"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <RatingBar
+            android:rating="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

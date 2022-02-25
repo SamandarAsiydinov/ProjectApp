@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FF5A6A"
+    tools:context=".fragment.FirstFragment">
+
+    <ImageView
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center"
+        android:src="@drawable/love"
+        android:layout_width="180dp"
+        android:layout_height="180dp"/>
+    <TextView
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_margin="15dp"
+        android:text="Saved Listings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar aliquam at donec facilisis. Lacus, justo, volutpat, diam condimentum ipsum, faucibus rutrum."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
